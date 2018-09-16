@@ -1,0 +1,25 @@
+{
+	"name": "svgDownload",
+	"version": "1.0.0",
+	"description": "svg download",
+	"main": "bundle.js",
+	"scripts": {
+		"build": "node source/process.js && WEBPACK_ENV=build webpack --progress --colors --mode=production",
+		"dev": "node source/process.js && WEBPACK_ENV=dev webpack --progress --colors --mode=none",
+		"test": "eslint source/*.js"
+	},
+	"devDependencies": {
+		"babel-core": "^6.26.3",
+		"babel-eslint": "^7.1.1",
+		"babel-loader": "^7.1.4",
+		"babel-preset-env": "^1.7.0",
+		"eslint": "^4.19.1",
+		"webpack": "^4.12.1",
+		"webpack-cli": "^3.0.8",
+		"webpack-dev-server": "^3.1.4"
+	},
+	"dependencies": {
+		"history": "^4.7.2"
+	},
+	"license": "MIT"
+}

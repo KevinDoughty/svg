@@ -1,1 +1,1 @@
-export const files = ["Axidraw_Magic_3_MP3LAUFjHeJh_Fixed.svg", "Axidraw_Magic_4_MP3KRf3YPuwf_Fixed.svg"];
+export const files = ["Axidraw_Magic_3_MP3LAUFjHeJh_Fixed.svg", "Axidraw_Magic_4_MP3KRf3YPuwf_Fixed.svg", "Magic_5_MP3LwqdoNhdV.svg"];

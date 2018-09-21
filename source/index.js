@@ -60,7 +60,5 @@ function display() {
 urlHistory.listen((location, action) => {
 	clear();
 	display();
-	console.log("doc",document.body.offsetHeight);
-	console.log("cont",document.getElementById("container").offsetHeight);
 });
 display();

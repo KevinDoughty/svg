@@ -1,7 +1,6 @@
 import createHistory from "history/createBrowserHistory";
 import { files } from "./generated.js";
 
-const text = document.createTextNode(string);
 const urlHistory = createHistory();
 let search = urlHistory.location.search;
 

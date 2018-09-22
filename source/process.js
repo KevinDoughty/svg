@@ -8,7 +8,7 @@ fs.readdir( __dirname+"/../content", function( err, files ) {
 	var count = 0;
 	files.forEach( function( file, index ) {
 		if (file.substring(file.length-4) === ".svg") { // only svg files
-			if (count) content += ", "; // can't use index, first might be a folder
+			if (count) content += ", "; // can't use index, first might not be an svg file
 			content += '"'+file+'"';
 			count++;
 		}

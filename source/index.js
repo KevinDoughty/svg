@@ -19,9 +19,7 @@ function displayGrid() {
 	files.forEach( function(name) {
 		const element = document.createElement("div");
 		element.addEventListener("mousedown", function() {
-			console.log("pre",urlHistory.location);
 			urlHistory.push({search:name});
-			console.log("post",urlHistory.location);
 		}, true);
 		const img = document.createElement("img");
 		element.appendChild(img);
@@ -81,7 +79,7 @@ function display() {
 }
 
 const item = currentItem();
-if (item && urlHistory.length < 2) { // insert grid in history before this one. Bug (but happens if this is disabled), initial grid gets replaced with the wrong search query at some point
+if (item && urlHistory.length < 2) { // insert grid in history before this one. Bug (also happens if this is disabled), initial grid gets replaced with the wrong search query at some point
 	const current = urlHistory.location.search;
 	urlHistory.replace({search:""});
 	urlHistory.push(current);

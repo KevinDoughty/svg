@@ -56,6 +56,13 @@ function displayDetail(name) {
 	container.addEventListener("mousedown", function() {
 		download(url,name);
 	}, true);
+	window.addEventListener("keydown", function(e) {
+		const keyCode = e.keyCode;
+		if (e.keyCode === 27) { // esc
+			clear();
+			displayGrid();
+		}
+	}, true);
 	if (automaticallyDownload) download(url,name);
 }
 
